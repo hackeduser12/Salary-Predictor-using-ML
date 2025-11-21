@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Load the saved model pipeline
-model = joblib.load('salary_predictor_model (1).joblib')
+model = joblib.load('salary_predictor_model.joblib')
 
 # Title
 st.title("Salary Predictor")
@@ -40,3 +40,4 @@ if st.button("Predict Salary"):
     # Display prediction
     st.success(f'Predicted Salary: ₹{predicted_salary:,.2f}')
     
+
